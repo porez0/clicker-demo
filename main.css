@@ -1,0 +1,63 @@
+@import url(/reset.css); 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+    /* font-weight: bold; */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+header{
+    width: 100vw;
+    height: 4.5%;
+    /* border: 1px red solid; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 40px;
+
+}
+header p{
+    text-align: center;
+    /* border: 1px blue solid; */
+    width: 33%;
+    height: 100%;
+    border-bottom: 1px red solid;
+    
+}
+header p:nth-child(1){
+    font-size: 30px;
+}
+header p:nth-child(3){
+    font-size: 30px;
+}
+main{
+    width: 50vw;
+    /* border: 1px blue dotted; */
+    display: flex;
+    align-items: center;
+    height: 80%;
+    justify-content: center;
+}
+.btn{
+    width: 200px;
+    height: 120px;
+    border-radius: 15px;
+    color: white;
+    border: 1px red solid;
+    font-size: 50px;
+    background-color: rgba(240, 248, 255, 0);
+
+}
+.btn:active{
+    animation-name: anime;
+    animation-duration: 0.1s;
+}
+
+@keyframes anime {
+    0% {background-color: rgba(0, 29, 54, 0);}
+    50% {background-color: rgba(90, 0, 0, 0.473);}
+    100% {background-color: rgba(240, 248, 255, 0);}
+}

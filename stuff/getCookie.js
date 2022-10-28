@@ -11,5 +11,5 @@ export default function getCookie(cname) {
             return c.substring(name.length, c.length);
         }
     }
-    return "Nie odnaleziono danych" + cname;
+    return "Nie odnaleziono danych " + cname;
 }
