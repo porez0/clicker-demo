@@ -1,6 +1,8 @@
 import setCookie from "./stuff/setCookie.js";
 import getCookie from "./stuff/getCookie.js";
 import load from "./stuff/load.js";
+import btn1 from "./shop.js";
+import popup from "./popup.js";
 load();
 
 
@@ -10,5 +12,10 @@ btn.addEventListener('mousedown', () => {
     setCookie('points', parseInt(points), 2000);
 
     document.querySelector('.points').innerHTML = points;
+
+    
     // console.log('points: ' + getCookie('points') + ' power: ' + getCookie('power'))
 });
+
+
+
