@@ -1,8 +1,6 @@
 import setCookie from "./stuff/setCookie.js";
 import getCookie from "./stuff/getCookie.js";
 import load from "./stuff/load.js";
-import btn1 from "./shop.js";
-import popup from "./popup.js";
 load();
 
 
