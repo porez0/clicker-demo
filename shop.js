@@ -39,13 +39,13 @@ let powerups = [
 
 
 
-for(let i = 0; i < powerups.length; i++){
-    btn1[i].innerHTML = `+${powerups[i].add} power </br></br> cost: ${powerups[i].cost}`;
-    btn1[i].addEventListener('click', () => {
-        if(getCookie('points') >= powerups[i].cost){
-            const i = Math.round(parseInt(getCookie('points')) - powerups[i].cost); 
+for(let q = 0; q < powerups.length; q++){
+    btn1[q].innerHTML = `+${powerups[q].add} power </br></br> cost: ${powerups[q].cost}`;
+    btn1[q].addEventListener('click', () => {
+        if(getCookie('points') >= powerups[q].cost){
+            const i = Math.round(parseInt(getCookie('points')) - powerups[q].cost); 
             setCookie('points', i, 20000);
-            const x = Math.round(parseInt(getCookie('power')) + powerups[i].add);
+            const x = Math.round(parseInt(getCookie('power')) + powerups[q].add);
             setCookie('power', x, 20000);
             document.querySelector('.points').innerHTML = getCookie('points');
             document.querySelector('.power').innerHTML = getCookie('power');
