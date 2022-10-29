@@ -1,5 +1,6 @@
 import setCookie from "./setCookie.js";
 import getCookie from "./getCookie.js";
+import update from "../update.js";
 
 function load() {
     function isNumber(n) { return !isNaN(parseFloat(n)) && !isNaN(n - 0) } 
@@ -10,8 +11,8 @@ function load() {
     if(!isNumber(getCookie('power'))){
         setCookie('power', 1, 2000);
     }
-    document.querySelector('.points').innerHTML = getCookie('points');
-    document.querySelector('.power').innerHTML = getCookie('power');
+
+    update();
 
     console.log('Poprawnie załadowano strone!');
     console.log('points: ' + getCookie('points') + ' power: ' + getCookie('power'))

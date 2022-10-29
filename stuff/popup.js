@@ -9,8 +9,8 @@ function popup(mess) {
         para.style.animationPlayState = 'running'
     }, 1000);
     setTimeout(() => {
-        para.style.display = 'none'
-    }, 2000);
+        para.remove();
+    }, 1900);
 
 }
 

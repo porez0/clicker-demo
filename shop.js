@@ -1,6 +1,7 @@
 import popup from "./stuff/popup.js";
 import getCookie from "./stuff/getCookie.js";
 import setCookie from "./stuff/setCookie.js";
+import update from "./update.js";
 
 const btn1 = document.querySelectorAll('.shop > button');
 let powerups = [
@@ -47,8 +48,12 @@ for(let q = 0; q < powerups.length; q++){
             setCookie('points', i, 20000);
             const x = Math.round(parseInt(getCookie('power')) + powerups[q].add);
             setCookie('power', x, 20000);
-            document.querySelector('.points').innerHTML = getCookie('points');
-            document.querySelector('.power').innerHTML = getCookie('power');
+            update();
+
+            let audio = new Audio("/assets/Projekt-bez-tytułu.mp3");
+            audio.volume = 0.07;
+            audio.play();
+
         } else {
             
             popup('Nie masz wystarczająco gotówki');
