@@ -1,7 +1,8 @@
-import popup from "./stuff/popup.js";
-import getCookie from "./stuff/getCookie.js";
-import setCookie from "./stuff/setCookie.js";
+import popup from "./popup.js";
+import getCookie from "./getCookie.js";
+import setCookie from "./setCookie.js";
 import update from "./update.js";
+import { playSound, shopButtonClick } from "./audio.js";
 
 const btn1 = document.querySelectorAll('.shop > button');
 let powerups = [
@@ -38,8 +39,6 @@ let powerups = [
 
 ]
 
-
-
 for(let q = 0; q < powerups.length; q++){
     btn1[q].innerHTML = `+${powerups[q].add} power </br></br> cost: ${powerups[q].cost}`;
     btn1[q].addEventListener('click', () => {
@@ -48,14 +47,9 @@ for(let q = 0; q < powerups.length; q++){
             setCookie('points', i, 20000);
             const x = Math.round(parseInt(getCookie('power')) + powerups[q].add);
             setCookie('power', x, 20000);
+            playSound(shopButtonClick[0].url);      
             update();
-
-            let audio = new Audio("/assets/Projekt-bez-tytułu.mp3");
-            audio.volume = 0.07;
-            audio.play();
-
         } else {
-            
             popup('Nie masz wystarczająco gotówki');
         }
     });
