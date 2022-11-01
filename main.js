@@ -3,6 +3,7 @@ import getCookie from "./stuff/getCookie.js";
 import load from "./stuff/load.js";
 import update from "./stuff/update.js"; 
 import { mainBtn, playSound } from "./stuff/audio.js";
+import "./stuff/audio.js";
 load();
 
 

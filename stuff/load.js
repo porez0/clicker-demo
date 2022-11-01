@@ -15,9 +15,15 @@ function load() {
     if(!isNumber(getCookie('volumeValue'))){
         setCookie('volumeValue', 100, 2000);
     }
+    if(!isNumber(getCookie('muted?'))){
+        setCookie('muted?', 0, 2000);
+    }
+    if(getCookie('muted?') === "1"){
+        const mute = document.querySelector("#muteVolume");
+        mute.checked = "true"
+    }
     update();
     console.log('Poprawnie załadowano strone!');
-    console.log('points: ' + getCookie('points') + ' power: ' + getCookie('power'))
 }
 
 export default load;

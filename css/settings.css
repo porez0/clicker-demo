@@ -2,6 +2,10 @@
     font-family: Arial, Helvetica, sans-serif;
     overflow: hidden;
 }
+.mutebtn{
+    padding-left: 20px;
+    /* background-color: red; */
+}
 .settingsTable{
     color: whitesmoke;
     display: flex;
