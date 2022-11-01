@@ -1,0 +1,23 @@
+.popup{
+    position: absolute;
+    left: 20px;
+    bottom: 20%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    overflow: hidden;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.247);
+}
+.popup p{
+    padding: 5px;
+    margin: 5px;
+    animation: popup 1s infinite;
+    animation-play-state: paused;
+}
+@keyframes popup {
+    0% {color: rgb(255, 255, 255);}
+    100% {color: rgba(255, 255, 255, 0);}
+}
+
+

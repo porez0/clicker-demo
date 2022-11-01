@@ -12,6 +12,7 @@ btn.addEventListener('mousedown', () => {
     let points = parseInt(getCookie('points')) + parseInt(getCookie('power'));
     setCookie('points', parseInt(points), 2000);
     
+
     playSound(mainBtn[0].url);
     update();
 });

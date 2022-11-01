@@ -1,0 +1,59 @@
+@import url(/css/settings.css);
+header{
+    user-select: none;
+    display: flex;
+    padding: 20px;
+    height: 90px;
+    color: whitesmoke;
+    background-color: rgba(199, 199, 199, 0.212);
+}
+.stats{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    flex-direction: row;
+    font-size: 25px;
+}
+.logo{
+    width: 5%;
+}
+.settings{
+    width: 5%;
+}
+header p:nth-child(2){
+    font-size: 35px;
+}
+header p{
+    text-align: center;
+}
+.settingsico, .close {
+    font-size: 90px;
+    text-align: right;
+    transition: transform 0.8s;
+    margin: 0;
+    padding: 0;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+.settingsico:hover, .close:hover{
+    cursor: pointer;
+    transform: rotate(-90deg);
+}
+.settingsico:active, .settingsico:active{
+    color: rgba(0, 0, 0, 0.315);
+}
+.closeCont{
+    border-radius: 15px;
+    transition: background-color 0.5s;
+}
+.closeCont:hover{
+    background-color: rgb(255, 72, 72);
+}
+.close{
+    display: none;
+}
+
+
