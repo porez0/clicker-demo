@@ -37,11 +37,11 @@
 }
 .settingsTable{
     position: absolute;
-    right: -200px;
+    right: -300px;
     top: 150px;
     display: flex;
     flex-direction: column;
-    width: 150px;
+    width: 200px;
     padding: 5px;
     background-color: rgba(199, 199, 199, 0.212);
     border-radius: 20px;
@@ -56,6 +56,6 @@
     animation: out 0.5s;
 }
 @keyframes out {
-    100% {right: -200px;}
+    100% {right: -300px;}
 }
 

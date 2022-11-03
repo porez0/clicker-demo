@@ -1,9 +1,5 @@
 import setCookie from "./setCookie.js";
 
-
-
-
-
 const closeIco = document.querySelector('.closeicoCont');
 
 const settingsIco = document.querySelector('.settingsicoCont');
@@ -15,7 +11,7 @@ settingsIco.addEventListener('click', () => {
     closeIco.classList.add("in")
 
     setTimeout(() => {
-        settingsIco.style.right = "-200px";
+        settingsIco.style.right = "-300px";
         settingsIco.classList.remove("out");
 
         settingsTable.style.right = '0';
@@ -33,13 +29,13 @@ closeIco.addEventListener('click', ()=> {
     
     closeIco.classList.add("out");
     setTimeout(() => {
-        closeIco.style.right = "-200px";
+        closeIco.style.right = "-300px";
         closeIco.classList.remove("out");
         
         settingsIco.style.right = "0";
         settingsIco.classList.remove("in")
 
-        settingsTable.style.right = '-200px';
+        settingsTable.style.right = '-300px';
         settingsTable.classList.remove("out");
 
     }, 500);

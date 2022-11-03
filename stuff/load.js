@@ -22,6 +22,17 @@ function load() {
         const mute = document.querySelector("#muteVolume");
         mute.checked = "true"
     }
+    if(!isNumber(getCookie('animebg'))){
+        setCookie('animebg', 1, 2000);
+    }
+    if(getCookie('animebg') === "1"){
+        const movingBg = document.querySelector("#movingBg");
+        movingBg.checked = "true";
+    }
+    if(getCookie('animebg') === "0"){
+        const video = document.querySelector('.video-bg');
+        video.style.display = "none";
+    }
     update();
     console.log('Poprawnie załadowano strone!');
 }
