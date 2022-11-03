@@ -17,9 +17,16 @@ header{
     flex-direction: row;
     font-size: 25px;
     position: absolute;
+    
 }
 .logo{
     width: 5%;
+}
+header p{
+    border: 3px whitesmoke solid;
+}
+.icoCont{
+    border: 1px whitesmoke solid;
 }
 header .stats p:nth-child(2){
     font-size: 35px;

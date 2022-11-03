@@ -28,10 +28,8 @@ function load() {
     if(getCookie('animebg') === "1"){
         const movingBg = document.querySelector("#movingBg");
         movingBg.checked = "true";
-    }
-    if(getCookie('animebg') === "0"){
         const video = document.querySelector('.video-bg');
-        video.style.display = "none";
+        video.play();
     }
     update();
     console.log('Poprawnie załadowano strone!');

@@ -5,9 +5,9 @@ animebg.addEventListener('change' , () => {
     const video = document.querySelector('.video-bg');
     if(animebg.checked){
         setCookie('animebg', 1, 2000);
-        video.style.display = "inline-block";
+        video.play();
     } else {
         setCookie('animebg', 0, 2000);
-        video.style.display = "none";
+        video.pause();
     }
 })
