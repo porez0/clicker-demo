@@ -6,6 +6,8 @@ import { mainBtn, playSound } from "./stuff/audio.js";
 import "./stuff/audio.js";
 import "./stuff/animeBg.js";
 import { placeDiv } from "./stuff/placeDiv.js";
+import "/stuff/settings.js";
+import "/stuff/shop.js";
 
 load();
 

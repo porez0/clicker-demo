@@ -20,9 +20,8 @@ export function placeDiv() {
 
 
 
-    b1.style.position = "fixed";
     b1.style.left = xPosition + "px";
-    b1.style.top = yPosition - 30 + "px";
+    b1.style.top = yPosition + "px";
     b1.classList.add('fadeout');
     b1.innerText = `+${getCookie('power')}`;
     setTimeout(() => {
