@@ -22,6 +22,12 @@
 .closeicoCont:hover{
     background-color: red;
 }
+.settingsicoCont{
+    transition: background-color 1s;
+}
+.settingsicoCont:hover{
+    background-color: rgb(199, 199, 199);
+}
 .ico{
     font-size: 90px;
     transition: transform 1s;
