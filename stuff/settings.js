@@ -3,32 +3,47 @@ import setCookie from "./setCookie.js";
 
 
 
-const settings = document.querySelector('.settingsico');
-const close = document.querySelector('.close');
-settings.addEventListener('click', () => {
+
+const closeIco = document.querySelector('.closeicoCont');
+
+const settingsIco = document.querySelector('.settingsicoCont');
+settingsIco.addEventListener('click', () => {
     const settingsTable = document.querySelector('.settingsTable');
+
     settingsTable.classList.add("in");
-    settingsTable.style.marginRight = "0px";
-    settings.style.display = "none";
-    
+    settingsIco.classList.add("out");
+    closeIco.classList.add("in")
+
     setTimeout(() => {
+        settingsIco.style.right = "-200px";
+        settingsIco.classList.remove("out");
+
+        settingsTable.style.right = '0';
         settingsTable.classList.remove("in");
-        close.style.display = "inline-block";
+
+        closeIco.style.right = '0';
+        closeIco.classList.remove("in")
     }, 500);
-})
-close.addEventListener('click', () => {
+});
+closeIco.addEventListener('click', ()=> {
     const settingsTable = document.querySelector('.settingsTable');
     settingsTable.classList.add("out");
-    settingsTable.style.marginRight = "-270px";
-    close.style.display = "none";
+
+    settingsIco.classList.add("in");
     
+    closeIco.classList.add("out");
     setTimeout(() => {
+        closeIco.style.right = "-200px";
+        closeIco.classList.remove("out");
+        
+        settingsIco.style.right = "0";
+        settingsIco.classList.remove("in")
+
+        settingsTable.style.right = '-200px';
         settingsTable.classList.remove("out");
-        settings.style.display = "inline-block";
+
     }, 500);
 })
-
-
 
 
 const volumeRange = document.querySelector('.volumeRange');

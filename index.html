@@ -12,30 +12,35 @@
 <body>
     <div class="popup"></div>
     <header>
-        <div class="logo"></div>
         <div class="stats">
             <p>Power: <br> <span class="power"></span></p>
             <p>Points: <br> <span class="points"></span></p>
             <p>Points/s: <br> <span class="pps">0</span></p>
         </div>
         <div class="settings">
-            <span class="material-symbols-outlined settingsico">settings</span>
-            <div class="closeCont"><span class="material-symbols-outlined close">close</span></div>
+            <div class="icoCont settingsicoCont">
+                <span class="material-symbols-outlined ico">settings</span>
+            </div>
+            <div class="icoCont closeicoCont">
+                <span class="material-symbols-outlined ico">close</span>
+            </div>
+            
+            
+            <div class="settingsTable">
+                    <div class="mutebtn space">
+                        <label for="Mute">Mute: </label>
+                        <input type="checkbox" name="Mute" id="muteVolume">
+                    </div>
+                    <div class="volumeCont space">
+                        <label for="Volume">Volume: <span class="volume"></span></label>
+                        <input type="range" name="Volume" class="volumeRange" max="200">
+                    </div>
+            </div>
         </div>
     </header>
     <main>
-        <div class="settingsTable">
-            <div class="SettingsBorder">
-                <div class="mutebtn">
-                    <label for="Mute">Mute: </label>
-                    <input type="checkbox" name="Mute" id="muteVolume">
-                </div>
-                <div class="volumeCont">
-                    <p>Volume: <span class="volume"></span></p>
-                    <input type="range" name="Volume" class="volumeRange" max="200">
-                </div>
-            </div>
-        </div>
+        
+        
         <div class="buttonCont"><input type="button" value="Click!" class="btn"></div>
         
         
