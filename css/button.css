@@ -8,7 +8,7 @@
     border: 1px whitesmoke solid;
     border-radius: 20px;
     color: white;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.582);
     box-shadow: 10px 10px 10px darkviolet, -10px -10px 10px purple;
     text-shadow: 2px 2px 5px black;
 }
@@ -17,7 +17,7 @@
 
 }
 .buttonCont{
-    height: 90vh;
+    height: 100vh;
     width: 100vw;
     display: flex;
     align-items: center;

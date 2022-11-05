@@ -2,6 +2,7 @@
 @import url(/css/popup.css);
 @import url(/css/header.css);
 @import url(/css/body.css);
+@import url(/css/footer.css);
 body{
     overflow: hidden;
 }

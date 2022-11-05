@@ -1,0 +1,14 @@
+@import url(/css/shop.css);
+
+footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    height: 150px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
